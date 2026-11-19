@@ -6,6 +6,14 @@ const film = {
   duration: 112,
 };
 
+const film2 = {
+  title: "Typist Artist Pirate King",
+  directory: "Carol Morley",
+  times: ["15:00", "20:00"],
+  certificate: "12A",
+  duration: 108,
+};
+
 function createFilmTitle() {
   const filmTitle = document
     .getElementById("film-card")
