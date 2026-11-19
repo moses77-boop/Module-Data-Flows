@@ -6,6 +6,8 @@ const film = {
   duration: 112,
 };
 const filmTitle = document.createElement("h3");
-filmTitle.textContent = film.title;
+const title = document.createElement("h1");
+title.textContent = film.title;
+filmTitle.appendChild(title);
 
 document.body.appendChild(filmTitle);
