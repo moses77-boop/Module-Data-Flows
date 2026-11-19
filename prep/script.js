@@ -13,6 +13,8 @@ function createFilmTitle() {
 
   filmTitle.querySelector("h3").textContent = film.title;
   filmTitle.querySelector("p").textContent = film.director;
+
+  return filmTitle;
 }
 
-document.body.append(createFilmTitle());
+document.body.append(createFilmTitle(), createFilmTitle());
