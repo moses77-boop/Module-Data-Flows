@@ -25,4 +25,4 @@ function createFilmTitle() {
   return filmTitle;
 }
 
-document.body.append(createFilmTitle(), createFilmTitle());
+document.body.append(createFilmTitle(film), createFilmTitle(film2));
