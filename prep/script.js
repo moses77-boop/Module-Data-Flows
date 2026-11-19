@@ -1,4 +1,4 @@
-const film = {
+const film1 = {
   title: "Killing of Flower Moon",
   director: "Martin Scorsese",
   times: ["15:35"],
@@ -19,10 +19,10 @@ function createFilmTitle() {
     .getElementById("film-card")
     .content.cloneNode(true);
 
-  filmTitle.querySelector("h3").textContent = film.title;
-  filmTitle.querySelector("p").textContent = film.director;
+  filmTitle.querySelector("h3").textContent = film1.title;
+  filmTitle.querySelector("p").textContent = film1.director;
 
   return filmTitle;
 }
 
-document.body.append(createFilmTitle(film), createFilmTitle(film2));
+document.body.append(createFilmTitle(film1), createFilmTitle(film2));
