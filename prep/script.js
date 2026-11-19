@@ -7,4 +7,5 @@ const film = {
 };
 const filmTitle = document.createElement("h3");
 filmTitle.textContent = film.title;
-console.log(filmTitle);
+
+document.body.appendChild(filmTitle);
