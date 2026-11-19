@@ -26,8 +26,6 @@ function createFilmTitle(film) {
   return filmTitle;
 }
 
-for(const film of films){
-    const card = createFilmTitle(film);
+const filmTitle = films.map(createFilmTitle);
 
-    document.body.appendChild(card);
-}
+document.body.append(...filmTitle);
