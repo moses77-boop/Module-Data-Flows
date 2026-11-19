@@ -15,4 +15,4 @@ function createFilmTitle() {
   filmTitle.querySelector("p").textContent = film.director;
 }
 
-document.body.appendChild(filmTitle);
+document.body.append(createFilmTitle());
