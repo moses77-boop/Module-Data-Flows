@@ -48,3 +48,5 @@ function render() {
 
   document.body.append(...filmTitle);
 }
+
+render();
