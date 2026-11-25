@@ -49,7 +49,7 @@ function render() {
   });
   const filmTitle = filteredFilms.map(createFilmTitle);
 
-  document.body.append(...filmTitle);
+  document.getElementById("film-container").append(...filmTitle);
 }
 
 render();
@@ -57,6 +57,7 @@ render();
 const input = document.querySelector("input");
 input.addEventListener("keyup", function () {
   state.searchTerm = input.value;
+  document.getElementById("film-container").innerHTML = "";
 
   render();
 });
