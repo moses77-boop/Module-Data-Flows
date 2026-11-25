@@ -43,6 +43,8 @@ function createFilmTitle(film) {
   return filmTitle;
 }
 
-const filmTitle = films.map(createFilmTitle);
+function render() {
+  const filmTitle = films.map(createFilmTitle);
 
-document.body.append(...filmTitle);
+  document.body.append(...filmTitle);
+}
