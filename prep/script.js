@@ -44,7 +44,7 @@ function createFilmTitle(film) {
 }
 
 function render() {
-  const filmTitle = films.map(createFilmTitle);
+  const filmTitle = state.films.map(createFilmTitle);
 
   document.body.append(...filmTitle);
 }
