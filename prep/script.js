@@ -13,6 +13,20 @@ const films = [
     certificate: "12A",
     duration: 108,
   },
+  {
+    title: "Pirates of the caribbean ",
+    director: "Moses",
+    times: ["15:00", "20:00"],
+    certificate: "12A",
+    duration: 108,
+  },
+  {
+    title: "Ocean Eleven",
+    director: "Molly",
+    times: ["15:00", "20:00"],
+    certificate: "12A",
+    duration: 108,
+  },
 ];
 
 function createFilmTitle(film) {
