@@ -44,6 +44,9 @@ function createFilmTitle(film) {
 }
 
 function render() {
+  const filteredFilms = state.films.filter(function (film) {
+    return film.title.includes(state.searchTerm);
+  });
   const filmTitle = state.films.map(createFilmTitle);
 
   document.body.append(...filmTitle);
@@ -54,8 +57,4 @@ render();
 const input = document.querySelector("input");
 input.addEventListener("keyup", function () {
   state.searchTerm = input.value;
-
-  const filteredFilms = state.films.filter(function (film) {
-    return film.title.includes(state.searchTerm);
-  });
 });
