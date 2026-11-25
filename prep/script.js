@@ -57,4 +57,6 @@ render();
 const input = document.querySelector("input");
 input.addEventListener("keyup", function () {
   state.searchTerm = input.value;
+
+  render();
 });
