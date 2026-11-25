@@ -47,7 +47,7 @@ function render() {
   const filteredFilms = state.films.filter(function (film) {
     return film.title.includes(state.searchTerm);
   });
-  const filmTitle = state.films.map(createFilmTitle);
+  const filmTitle = filteredFilms.map(createFilmTitle);
 
   document.body.append(...filmTitle);
 }
