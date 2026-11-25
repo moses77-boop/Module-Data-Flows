@@ -1,33 +1,36 @@
-const films = [
-  {
-    title: "Killing of Flower Moon",
-    director: "Martin Scorsese",
-    times: ["15:35"],
-    certificate: "15",
-    duration: 112,
-  },
-  {
-    title: "Typist Artist Pirate King",
-    director: "Carol Morley",
-    times: ["15:00", "20:00"],
-    certificate: "12A",
-    duration: 108,
-  },
-  {
-    title: "Pirates of the caribbean ",
-    director: "Moses",
-    times: ["15:00", "20:00"],
-    certificate: "12A",
-    duration: 108,
-  },
-  {
-    title: "Ocean Eleven",
-    director: "Molly",
-    times: ["15:00", "20:00"],
-    certificate: "12A",
-    duration: 108,
-  },
-];
+const state = {
+  films: [
+    {
+      title: "Killing of Flower Moon",
+      director: "Martin Scorsese",
+      times: ["15:35"],
+      certificate: "15",
+      duration: 112,
+    },
+    {
+      title: "Typist Artist Pirate King",
+      director: "Carol Morley",
+      times: ["15:00", "20:00"],
+      certificate: "12A",
+      duration: 108,
+    },
+    {
+      title: "Pirates of the caribbean ",
+      director: "Moses",
+      times: ["15:00", "20:00"],
+      certificate: "12A",
+      duration: 108,
+    },
+    {
+      title: "Ocean Eleven",
+      director: "Molly",
+      times: ["15:00", "20:00"],
+      certificate: "12A",
+      duration: 108,
+    },
+  ],
+  searchTerm: "",
+};
 
 function createFilmTitle(film) {
   const filmTitle = document
