@@ -50,3 +50,12 @@ function render() {
 }
 
 render();
+
+const input = document.querySelector("input");
+input.addEventListener("keyup", function () {
+  state.searchTerm = input.value;
+
+  const filteredFilms = state.films.filter(function (film) {
+    return film.title.includes(state.searchTerm);
+  });
+});
